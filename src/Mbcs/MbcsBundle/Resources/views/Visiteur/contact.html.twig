@@ -1,0 +1,39 @@
+{% extends ':layout:base.html.twig' %}
+{% block body %}
+
+    <!-- Contact -->
+    <div id="contact" class="container">
+
+        <h3 class="text-center"><strong>Contact</strong></h3>
+        <p class="text-center"><em>Réponse assurée!</em></p>
+        <div class="row">
+            <div class="col-md-4">
+                <p>Nos coordonnées:</p>
+                <p><span class="glyphicon glyphicon-map-marker"></span>54, Bd Laveran, Marseille, France</p>
+                <p><span class="glyphicon glyphicon-phone"></span>Tél.: +(0033) 0405246553</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>Email: contact@mbcs.com</p>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Votre nom" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Votre Email" type="email" required>
+                    </div>
+                </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Votre message"
+                      rows="7"></textarea>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 form-group">
+                        <button class="btn pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- /Contact -->
+
+{% endblock %}

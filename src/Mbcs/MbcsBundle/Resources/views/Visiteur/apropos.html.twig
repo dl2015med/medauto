@@ -1,0 +1,38 @@
+{% extends ':layout:base.html.twig' %}
+{% block body %}
+
+<div id="apropos" class="container-fluid text-center">
+    <h4>Audi - MBCS Laveran</h4>
+    <p><em>MBCS, Concession AUDI (c) Marseille depuis 1982.</em></p>
+    <p>Nos équipes sont à votre service, vous apportent conseil, choix et solutions</br>
+        visiter notre concession pour voir nos modeles, se renseigner....</br></br>
+
+
+    </p>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <p class="text-center"><strong>Sportivité</strong></p><br>
+            <a href="#">
+                <img src="{{ asset('img/car1.jpg') }}" class="img-circle person" alt="voiture">
+            </a>
+
+        </div>
+        <div class="col-sm-4">
+            <p class="text-center"><strong>Audace</strong></p><br>
+            <a href="#">
+                <img src="{{ asset('img/car2.jpg') }}" class="img-circle person" alt="voiture">
+            </a>
+
+        </div>
+        <div class="col-sm-4">
+            <p class="text-center"><strong>Elegance</strong></p><br>
+            <a href="#">
+                <img src="{{ asset('img/car3.jpg') }}" class="img-circle person" alt="voiture">
+            </a>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

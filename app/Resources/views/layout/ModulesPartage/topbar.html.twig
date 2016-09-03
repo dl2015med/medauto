@@ -1,0 +1,48 @@
+<!-- navbar top  -->
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- menu nav bar reduit -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="{{ path('mbcs') }}">
+                        <img src="{{ asset('logoMBCS.gif') }}" alt="logo Audi" width="80" height="50">
+                    </a>
+                </div>
+
+                <!-- /menu nav bar deroulé -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- accueil -->
+                        <li><a href="{{ path('mbcs') }}">ACCUEIL</a></li>
+                        <!-- catalogue -->
+                        <li><a href="{{ path('catalogue') }}">CATALOGUE</a></li>                        
+                        <!-- contact -->
+                        <li><a href="{{ path('contact') }}">CONTACT</a></li>
+                        <!-- a propos -->
+                        <li><a href="{{ path('apropos') }}">APROPOS</a></li>                        
+                        <!-- connexion -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">MON ESPACE
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">se Connecter</a></li>
+                                <li><a href="#">mes infos</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">se déconnecter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>  
+<!-- /navbar  top -->

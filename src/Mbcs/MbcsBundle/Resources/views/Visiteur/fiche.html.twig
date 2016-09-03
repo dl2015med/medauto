@@ -1,0 +1,138 @@
+{% extends ':layout:base.html.twig' %}
+
+{% block body %}
+
+    <div class="container">
+        <h4>Description véhicule:</h4>
+        {# ligne 1: photo, nom, prix, CO2 #}
+        <div class="row">            
+            <div class="col-md-6 col-lg-6 ">
+                <img src="{{ asset('img/Audi_A4_2.jpg') }}" alt="AUDI A4">
+            </div>
+            <div class="col-md-6 col-lg-6 ">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6 ">
+                        <h3>Audi A4 2.0 TDI Ambition</h3>
+                        <p>Citadine, 3 Portes 4 Places, 135ch, Diesel 4.2L
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 bg-info">
+                        <h3>Prix: 15.890€</h3>
+                    </div>
+
+                    <div class="col-md-3 col-lg-3 bg-success">
+                        <h3>CO2: 80g/km</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        {# ligne 2: tableau navtab descriptif details #}
+        <div class="row">
+            <div class="col-md-10 col-lg-12 ">
+                <div class="panel with-nav-tabs panel-default">
+                    <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1default" data-toggle="tab">Caractéristiques</a></li>
+                            <li><a href="#tab2default" data-toggle="tab">Equipements</a></li>
+                            <li><a href="#tab3default" data-toggle="tab">Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-content">
+                            <!-- caracteristiques -->
+                            <div class="tab-pane fade in active" id="tab1default">
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3">Première mise en circulation:</div>
+                                    <div class="col-md-3 col-lg-3">14 Juillet 2015</div>
+                                    <div class="col-md-3 col-lg-3">Moteur:</div>
+                                    <div class="col-md-3 col-lg-3">J125H22DSX</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3">Kilométrage:</div>
+                                    <div class="col-md-3 col-lg-3">10.250</div>
+                                    <div class="col-md-3 col-lg-3">Carburant:</div>
+                                    <div class="col-md-3 col-lg-3">Diesel</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3">Carrosserie:</div>
+                                    <div class="col-md-3 col-lg-3">à hayon, 3 portes</div>
+                                    <div class="col-md-3 col-lg-3">Cylindré (cm3):</div>
+                                    <div class="col-md-3 col-lg-3">1496</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3">Nombre de places:</div>
+                                    <div class="col-md-3 col-lg-3">5 places</div>
+                                    <div class="col-md-3 col-lg-3">Puissance maxi(ch):</div>
+                                    <div class="col-md-3 col-lg-3">95</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3">type de boite:</div>
+                                    <div class="col-md-3 col-lg-3">Manuelle, 6</div>
+                                    <div class="col-md-3 col-lg-3">Puissance administrative(CV):</div>
+                                    <div class="col-md-3 col-lg-3">5</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 col-lg-3">Garantie:</div>
+                                    <div class="col-md-3 col-lg-3">24 mois</div>
+                                    <div class="col-md-3 col-lg-3">Roues motrices:</div>
+                                    <div class="col-md-3 col-lg-3">Arrière</div>
+                                </div>
+                            </div>
+                            <!-- equipements -->
+                            <div class="tab-pane fade" id="tab2default">
+                                <div class="row">
+                                    <div class="col-md-5 col-lg-5">
+                                        <div class="row">Sécurité</div>
+                                        <div class="row">Confort</div>
+                                        <div class="row">Multimédia</div>
+                                        <div class="row">Communication</div>
+                                        <div class="row">Roues</div>
+                                        <div class="row">Sièges</div>
+                                    </div>
+                                    <div class="col-md-5 col-lg-5">
+                                        <ul>
+                                            <li>shdhgdh</li>
+                                            <li>hgshdfhsg</li>
+                                            <li>shdghgdhs</li>
+                                            <li>sqhqshsgf</li>
+                                            <li>qdfhdfhgdfh</li>
+                                            <li>hdhdghf</li>
+                                            <li>shdhgdh</li>
+                                            <li>hgshdfhsg</li>
+                                            <li>shdghgdhs</li>
+                                            <li>sqhqshsgf</li>
+                                            <li>qdfhdfhgdfh</li>
+                                            <li>hdhdghf</li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- Options -->
+                            <div class="tab-pane fade" id="tab3default">
+                                <ul>
+                                    <li> fffqfFFQDFD</li>
+                                    <li> fffqfFFQDFD</li>
+                                    <li> fffqfFFQDFD</li>
+                                    <li> fffqfFFQDFD</li>
+                                    <li> fffqfFFQDFD</li>
+                                    <li> fffqfFFQDFD</li>
+                                    <li> fffqfFFQDFD</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

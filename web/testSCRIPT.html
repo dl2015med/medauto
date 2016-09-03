@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Exemple d'utilisation de getElementById</title>
+
+	<script type="text/javascript">
+		 function changeCouleur(nouvelleCouleur) {
+		   elem = document.getElementById("para1");
+		   elem.style.color = nouvelleCouleur;
+		 }
+	</script>
+
+	<script type="text/javascript">
+		document.getElementById("googleMap").			
+		function initialize() {
+		  var mapProp = { 	center:new google.maps.LatLng(51.508742,-0.120850),zoom:5,
+		    				mapTypeId:google.maps.MapTypeId.ROADMAP };
+
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+
+
+
+</head>
+
+<body>
+
+	<p id="para1">Un peu de texte.</p>
+	<button onclick="changeCouleur('blue');">bleu</button>
+	<button onclick="changeCouleur('red');">rouge</button>
+
+</body>
+</html>

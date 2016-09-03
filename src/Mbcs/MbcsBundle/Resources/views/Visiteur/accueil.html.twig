@@ -1,0 +1,66 @@
+{% extends ':layout:base.html.twig' %}
+
+
+{% block stylesheets %}
+	{% stylesheets 'css/accueil.css' filter='cssrewrite' %}
+		{{ parent() }}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+{% endblock %}
+
+
+{% block body %}    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- carousel   -->
+                {% include 'MbcsBundle:Visiteur/Modules:carousel.html.twig' %}
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <!-- horaires -->
+                <h3> Horraires d'ouvertures:</br> </h3>
+                <h4>
+                    du Lundi au Vendredi: 8h30 - 17h00 NON STOP</br>
+                    Samedi: 9h00 - 12h00    
+                </h4>
+            </div>
+            <div class="col-lg-4" >
+                <!-- plan -->
+                <p id="MyMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5804.647378557822!2d5.409886875637468!3d43.32841525340503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9bf97c6a188b5%3A0x26144d7cd0241160!2zQUZQQSBTdCBKw6lyw7RtZQ!5e0!3m2!1sfr!2sfr!4v1472894734719" 
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                </p>                
+            </div>
+            <div class="col-lg-4">
+                <!-- coordonnees -->
+                <h3>Coordonnées:</br> </h3>
+                <h4>MBCS - Marseille</br>
+                    54 boulevard Laveran</br>
+                    13013 Marseille</br>
+                    tél: 04.04.04.04.04</br>
+                    fax: 04.04.04.04.04           
+                </h4>
+            </div>
+        </div>        
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+{% endblock %}
+
+
+
+
+
+
+

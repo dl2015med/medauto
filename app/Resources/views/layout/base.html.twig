@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="concession vente voiture neuf occasion ">
+        <meta name="author" content="Mohammed BENARICHA">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+
+        <title>{% block title %}MBCS{% endblock %}</title>
+
+
+
+
+        {% block stylesheets %}
+        {% stylesheets
+            'css/bootstrap.min.css'
+            'css/base.css'
+            filter='cssrewrite' %}
+            <link rel="stylesheet" href="{{ asset_url }}" />
+        {% endstylesheets %}
+        {% endblock %}
+
+    </head>
+<body>
+    <div id="topbar">
+        {% block topbar %}
+            {% include 'layout/ModulesPartage/topbar.html.twig' %}
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block body %}
+        {% endblock %}
+    </div>
+
+    <div id="botombar">
+        {% block botombar %}
+            {% include 'layout/ModulesPartage/botombar.html.twig' %}
+        {% endblock %}
+    </div>
+
+
+    {% block javascripts %}
+        {% javascripts
+            'js/jquery.min.js'
+            'js/bootstrap.min.js' %}
+            <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+    {% endblock %}
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+mbcs:
+    path:     /
+    defaults: { _controller: MbcsBundle:Mbcs:accueil }
+
+catalogue:
+    path:     /catalogue/
+    defaults: { _controller: MbcsBundle:Mbcs:catalogue }
+
+contact:
+    path:     /contact/
+    defaults: { _controller: MbcsBundle:Mbcs:contact }
+
+apropos:
+    path:     /apropos/
+    defaults: { _controller: MbcsBundle:Mbcs:apropos }
+
+fiche:
+    path:     /fiche/
+    defaults: { _controller: MbcsBundle:Mbcs:fiche }
+
+
+cgv:
+    path:     /cgv/
+    defaults: { _controller: MbcsBundle:Mbcs:cgv }
+
+
+
