@@ -36,4 +36,10 @@ class MbcsController extends Controller
         return $this->render('MbcsBundle:Visiteur:cgv.html.twig');
     }
     
+    public function entreeVehiculeAction()
+    {
+        return $this->render('MbcsBundle:Administration:entreeVehicule.html.twig');
+    }
+    
+    
 }
