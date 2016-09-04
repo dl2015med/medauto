@@ -13,19 +13,10 @@
     
     <!-- Page Content -->
     <div class="container">
-
         <div class="row">
-
             <div class="col-md-3">
                 <p><h4>Recherche:</h4></p>
-                <p>
-                    Marque:
-                    Modele:
-                    Energie:
-                    Kilométrage:
-                    Année:
-                    Prix:
-                </p>
+                    {% include 'MbcsBundle:Visiteur/Modules:sideRecherche.html.twig' %}
             </div>
 
             <div class="col-md-9">                
@@ -37,7 +28,7 @@
                 </div>
                 <div class="row">
                     {# trombi #}
-					{% include 'MbcsBundle:Visiteur/Modules:trombi.html.twig' %}                    
+                    {% include 'MbcsBundle:Visiteur/Modules:trombi.html.twig' %}                    
                 </div>
             </div>
         </div>
