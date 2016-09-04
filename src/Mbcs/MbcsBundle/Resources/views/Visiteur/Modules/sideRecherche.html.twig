@@ -18,8 +18,8 @@
 
     <label for="energie">Energie principale.:</label>
     <select class="form-control" id="energie">
-        <option>Essence</option><option>Diesel</option><option>Gaz</option>
-        <option>Electrique</option><option>Hybride</option>
+        <option>Essence</option><option>Diesel</option><option>GPL/GNV</option>
+        <option>Electrique</option><option>Hybride</option><option>Biocarburant</option>
     </select>
 
     <label for="annee">Année max.:</label>
@@ -32,8 +32,33 @@
 
     <label for="kilo">Kilométrage max.:</label>
     <input class="form-control input-sm" id="kilo" type="text">
-    <label for="prix">Prix max.:</label>
-    <input class="form-control input-sm" id="prix" type="text">
+    
+    <label for="prixmax" class="control-label">Prix max:</label>
+    <select class="form-control" id="prixmax" name="prixmax">
+        <option value="">tout</option>
+        <option value="1500">1.500€</option>
+        <option value="2000">2.000€</option>
+        <option value="3000">3.000€</option>
+        <option value="4000">4.000€</option>
+        <option value="5000">5.000€</option>
+        <option value="6000">6.000€</option>
+        <option value="7000">7.000€</option>
+        <option value="8000">8.000€</option>
+        <option value="9000">9.000€</option>
+        <option value="10000">10.000€ et +</option>
+    </select>
+
+    <div>
+    <label for="boitev">Boite de vitesse:</label>
+    <ul id="boitev">
+            <li><div class="checkbox">
+                    <label><input type="checkbox" value="">Manuelle</label></div>
+            </li>
+            <li><div class="checkbox">
+                    <label><input type="checkbox" value="">Automatique</label></div>
+            </li>
+     </ul>
+    </div>    
     <button type="submit" class="btn btn-primary">Go!</button>
 </div> 
 
