@@ -22,6 +22,7 @@ fiche:
 cgv:
     path:     /cgv/
     defaults: { _controller: MbcsBundle:Mbcs:cgv }
+    
 entreeVehicule:
     path:     /entreeV/
     defaults: { _controller: MbcsBundle:Mbcs:entreeVehicule }
